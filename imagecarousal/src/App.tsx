@@ -30,11 +30,14 @@ function App() {
         <button className='m-5' onClick={setPreviousImage}>
           Previous
         </button>
-        <img
-          src={ImageLinks[activeImageIndex]}
-          alt=""
-          className='h-[500px] w-[700px]'
-        />
+        {ImageLinks.map((link, index) => {
+          return <img
+            id={link}
+            src={link}
+            alt=""
+            className={"h-[500px] w-[700px] " + (index === activeImageIndex ? "block" : "hidden")}
+          />
+        })}
         <button className='m-5' onClick={setNextImage}>
           Next
         </button>

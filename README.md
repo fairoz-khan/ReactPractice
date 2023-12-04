@@ -1,2 +1,2 @@
 # ReeactPractice
- Practice React Projects
+ Practice React small Projects
